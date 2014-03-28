@@ -1,0 +1,45 @@
+{
+   "abstract" : "a trivial caching layer around an C<IO::Async::Resolver>",
+   "author" : [
+      "Paul Evans <leonerd@leonerd.org.uk>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Module::Build version 0.4204",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "IO-Async-Resolver-StupidCache",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "IO::Async::Loop" : "0",
+            "IO::Async::Test" : "0",
+            "Test::More" : "0.88"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "IO::Async::Notifier" : "0",
+            "IO::Async::Resolver" : "0",
+            "Struct::Dumb" : "0"
+         }
+      }
+   },
+   "provides" : {
+      "IO::Async::Resolver::StupidCache" : {
+         "file" : "lib/IO/Async/Resolver/StupidCache.pm",
+         "version" : "0.01"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ]
+   },
+   "version" : "0.01"
+}
